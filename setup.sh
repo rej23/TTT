@@ -41,3 +41,8 @@ echo "To use this environment, run: source /home/ubuntu/ansible_env/bin/activate
 EOT
   filename = "${path.module}/ansible_setup.sh"
 }
+
+###############################
+# chmod +x setup.sh
+# ./setup.sh
+###############################
