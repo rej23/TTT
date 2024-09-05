@@ -12,11 +12,11 @@ sudo apt install -y python3 python3-pip python3-venv
 
 # Create a virtual environment
 echo "Creating virtual environment..."
-python3 -m venv ~/ansible_env
+python3 -m venv /home/ubuntu/ansible_env
 
 # Activate the virtual environment
 echo "Activating virtual environment..."
-source ~/ansible_env/bin/activate
+source /home/ubuntu/ansible_env/bin/activate
 
 # Install Ansible and Kubernetes module
 echo "Installing Ansible and Kubernetes module..."
@@ -37,9 +37,7 @@ echo "Setup complete!"
 # Deactivate the virtual environment
 deactivate
 
-echo "To use this environment, run: source ~/ansible_env/bin/activate"
-
-###############################
-# chmod +x setup.sh
-# ./setup.sh
-###############################
+echo "To use this environment, run: source /home/ubuntu/ansible_env/bin/activate"
+EOT
+  filename = "${path.module}/ansible_setup.sh"
+}
